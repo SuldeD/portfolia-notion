@@ -20,11 +20,10 @@ export default function Links() {
             className="animate-in space-y-1 text-center"
             style={{ "--index": 2 } as React.CSSProperties}
           >
-            <h1 className="text-2xl font-bold tracking-tight">Brian Ruiz</h1>
+            <h1 className="text-2xl font-bold tracking-tight">Munkh Suld</h1>
             <p className="mx-auto max-w-sm text-secondary">
               Software engineer who loves building cool things with code. In
-              addition to coding, I also make YouTube videos. Find me elsewhere
-              @brianruizy
+              addition to coding . Find me elsewhere @munkhsuld
             </p>
           </div>
         </div>

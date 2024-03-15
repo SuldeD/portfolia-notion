@@ -8,9 +8,9 @@ import Link from "@/components/ui/Link";
 import Mdx from "@/app/blog/components/ui/MdxWrapper";
 import ViewCounter from "@/app/blog/components/ui/ViewCounter";
 import Subscribe from "@/app/blog/components/ui/NewsletterSignupForm";
-import { formatDate } from "lib/formatdate";
 
 import Avatar from "@/public/avatar.png";
+import { formatDate } from "@/lib/formatdate";
 
 type Props = {
   params: {

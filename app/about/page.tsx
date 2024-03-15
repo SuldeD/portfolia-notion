@@ -7,16 +7,13 @@ import ConnectLinks from "../../components/ConnectLinks";
 import Workplaces from "./components/Workplaces";
 import Gallery from "./components/Gallery";
 
-import hinesLogo from "public/work/hines-logo.jpeg";
-import perishipLogo from "public/work/periship-logo.jpeg";
-import camsLogo from "public/work/cams-logo.png";
-import uhdLogo from "public/work/uhd.png";
+import infiniteLogo from "public/work/infinite.png";
 
-import meLily from "public/gallery/me-lily.jpg";
-import colorado from "public/gallery/colorado.jpg";
+import battman from "public/gallery/battman.jpeg";
+import dublin from "public/gallery/dublin.jpeg";
 
 export const metadata: Metadata = {
-  title: "About | Brian Ruiz",
+  title: "About | Munkh Suld",
   description:
     "I am a full-stack software engineer who basically just enjoys creating things.",
 };
@@ -41,7 +38,7 @@ export default function About() {
           style={{ "--index": 1 } as React.CSSProperties}
         >
           <Image
-            src={meLily}
+            src={battman}
             alt={"me and lily"}
             width={324}
             height={139}
@@ -55,7 +52,7 @@ export default function About() {
           style={{ "--index": 2 } as React.CSSProperties}
         >
           <Image
-            src={colorado}
+            src={dublin}
             alt={"me and lily"}
             width={220}
             height={260}
@@ -73,13 +70,13 @@ export default function About() {
       >
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
-            <p>Hello world, I&apos;m Brian Ruiz!</p>
+            <p>Hello world, I&apos;m Munkh Suld!</p>
 
             <p>
               I have a passion for design and am always looking for ways to
               incorporate it into my engineering work.
             </p>
-            <p>
+            {/* <p>
               In addition to coding, I also make{" "}
               <Link
                 className="underline"
@@ -89,10 +86,10 @@ export default function About() {
               </Link>{" "}
               videos, where I focus on tech gear, creative vlogs, and a bit of
               personal development.
-            </p>
+            </p> */}
             <p>
               When I&apos;m not at my desk I am probably lifting weights,
-              playing soccer, or at a coffee shop :)
+              playing basketball and tennis, or at a coffee shop :)
             </p>
           </div>
         </Section>
@@ -101,8 +98,8 @@ export default function About() {
           <div className="flex flex-col w-full gap-8">
             <p>
               Have a question or just want to chat? Feel free to{" "}
-              <Link href="mailto:contact@b-r.io">email me</Link>. Try finding me
-              anywhere else at @brianruizy
+              <Link href="mailto:contact@sulde.dev@gmail.com">email me</Link>.
+              Try finding me anywhere else at @munkhsuld
             </p>
             <ul className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-2 animated-list">
               {ConnectLinks.map((link) => (
@@ -137,15 +134,18 @@ export default function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex flex-col w-full gap-8">
             <p>
-              {new Date().getFullYear() - 2019}+ years of professional
+              {new Date().getFullYear() - 2023}+ years of professional
               development experience.
             </p>
             <p>
-              I started my career teaching others how to code, which I will
-              always be appreciative of. Then I worked at a few small local
-              companies. Now I&apos;m a full stack engineer currently working at{" "}
-              <Link className="underline" href="https://hines.com">
-                Hines
+              I learn{" "}
+              <Link className="underline" href="https://www.pinecone.academy/">
+                pinecone
+              </Link>{" "}
+              for 8 months. Then I&apos;m personal development. Now I&apos;m a
+              software engineer currently working at{" "}
+              <Link className="underline" href="https://infinite.mn">
+                Infinite
               </Link>
               , one of the largest private real estate investors in the world.
             </p>
@@ -159,31 +159,31 @@ export default function About() {
 
 const workplaces = [
   {
-    title: "Full Stack Engineer",
-    company: "Hines",
-    time: "2022 -",
-    imageSrc: hinesLogo,
-    link: "https://hines.com",
+    title: "Sowtware Engineer",
+    company: "Infinite",
+    time: "2023 -",
+    imageSrc: infiniteLogo,
+    link: "https://infinite.mn",
   },
-  {
-    title: "Software Engineer",
-    company: "PeriShip",
-    time: "2021 - 2022",
-    imageSrc: perishipLogo,
-    link: "https://peripharma.com/",
-  },
-  {
-    title: "Python Developer",
-    company: "CAMS",
-    time: "2019 - 2020",
-    imageSrc: camsLogo,
-    link: "https://camstex.com",
-  },
-  {
-    title: "Coding Camp Instructor",
-    company: "University of Houston",
-    time: "2019",
-    imageSrc: uhdLogo,
-    link: "https://www.uhd.edu/",
-  },
+  // {
+  //   title: "Software Engineer",
+  //   company: "PeriShip",
+  //   time: "2021 - 2022",
+  //   imageSrc: perishipLogo,
+  //   link: "https://peripharma.com/",
+  // },
+  // {
+  //   title: "Python Developer",
+  //   company: "CAMS",
+  //   time: "2019 - 2020",
+  //   imageSrc: camsLogo,
+  //   link: "https://camstex.com",
+  // },
+  // {
+  //   title: "Coding Camp Instructor",
+  //   company: "University of Houston",
+  //   time: "2019",
+  //   imageSrc: uhdLogo,
+  //   link: "https://www.uhd.edu/",
+  // },
 ];

@@ -4,12 +4,12 @@ import { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 
 import texas from "public/gallery/texas.jpg";
-import meLily from "public/gallery/me-lily.jpg";
-import colorado from "public/gallery/colorado.jpg";
-import cowboy from "public/gallery/cowboy-bike.webp";
+import battman from "public/gallery/battman.jpeg";
+import dublin from "public/gallery/dublin.jpeg";
+import rome from "public/gallery/rome.jpeg";
 
 import Halo from "@/components/ui/Halo";
 
@@ -141,7 +141,7 @@ export default function Gallery() {
     <>
       <section className="flex gap-4 h-[268px] relative">
         <Photo
-          src={meLily}
+          src={battman}
           meta="2021-07-12"
           alt="Brian and Lily"
           width={324}
@@ -151,7 +151,7 @@ export default function Gallery() {
           index={1}
         />
         <Photo
-          src={cowboy}
+          src={dublin}
           meta="2017-07-04"
           alt="my e-bike"
           width={230}
@@ -161,7 +161,7 @@ export default function Gallery() {
           index={2}
           flipDirection="left"
         />
-         <Photo
+        <Photo
           src={texas}
           meta="2021-05-20"
           alt="Texas"
@@ -172,7 +172,7 @@ export default function Gallery() {
           index={3}
         />
         <Photo
-          src={colorado}
+          src={rome}
           meta="2022-09-10"
           alt={"Snowboarding in Colorado"}
           width={220}

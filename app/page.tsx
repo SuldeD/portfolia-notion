@@ -28,7 +28,7 @@ export default async function Home() {
             className="animate-in text-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
           >
-            Software Engineer & Creator
+            Software Engineer & Learner
           </p>
         </div>
         <div
@@ -49,8 +49,8 @@ export default async function Home() {
           style={{ "--index": 2 } as React.CSSProperties}
         >
           Good evening, I&apos;m, a programmer who loves building new things. In
-          addition to coding, I also make YouTube videos, where I focus on tech,
-          creative vlogs, and personal development.
+          addition to coding, I also like Travel, where I focus on tech, and
+          personal development.
         </p>
         <ul
           className="animated-list flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
