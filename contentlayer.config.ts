@@ -8,8 +8,6 @@ import rehypeSlug from "rehype-slug";
 
 const getSlug = (doc: any) => doc._raw.sourceFileName.replace(/\.mdx$/, "");
 
-console.log(getSlug, "getSlug");
-
 const postComputedFields: ComputedFields = {
   slug: {
     type: "string",
