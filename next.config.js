@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-// const withMDX = require("@next/mdx")();
-const { withContentlayer } = require("next-contentlayer");
+const withMDX = require("@next/mdx")();
+// const { withContentlayer } = require("next-contentlayer");
 
 const nextConfig = {
   reactStrictMode: true,
@@ -22,5 +22,5 @@ const nextConfig = {
   },
 };
 
-module.exports = withContentlayer(nextConfig);
-// module.exports = withMDX(nextConfig);
+// module.exports = withContentlayer(nextConfig);
+module.exports = withMDX(nextConfig);

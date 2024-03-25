@@ -67,6 +67,6 @@ export default makeSource({
   contentDirPath: "content",
   documentTypes: [Post, Project],
   mdx: {
-    rehypePlugins: [rehypePrism, rehypeSlug],
+    rehypePlugins: [() => rehypePrism, rehypeSlug],
   },
 });
