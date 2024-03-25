@@ -6,7 +6,6 @@ import {
 import rehypePrism from "rehype-prism-plus";
 import rehypeSlug from "rehype-slug";
 var getSlug = (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, "");
-console.log(getSlug, "getSlug");
 var postComputedFields = {
   slug: {
     type: "string",
@@ -70,4 +69,4 @@ export {
   Project,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-EOH4M4TS.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-JT7QYVCT.mjs.map

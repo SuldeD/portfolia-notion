@@ -33,9 +33,9 @@ export default function Blog() {
           className="animate-in flex flex-col animated-list"
           style={{ "--index": 3 } as React.CSSProperties}
         >
-          {projects.map((project, i) => (
+          {projects.map((project: any, i: number) => (
             <li
-              key={project.slug}
+              key={project.slug + i}
               className={clsx(
                 "py-6 flex flex-col md:flex-row gap-4 md:gap-6 transition-opacity first:pt-0 last:pb-0"
               )}

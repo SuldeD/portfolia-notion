@@ -67,7 +67,7 @@ export default async function Home() {
           </li>
           <li className="transition-opacity">
             <Link
-              href="mailto:contact@b-r.io"
+              href="mailto:contact@sulde.dev@gmail.com"
               className="flex items-center gap-2 no-underline"
             >
               <ArrowUpRightIcon className="h-5 w-5" />

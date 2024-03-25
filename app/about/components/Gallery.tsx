@@ -142,7 +142,7 @@ export default function Gallery() {
       <section className="flex gap-4 h-[268px] relative">
         <Photo
           src={battman}
-          meta="2021-07-12"
+          meta=""
           alt="Battman"
           width={324}
           height={239}
@@ -152,7 +152,7 @@ export default function Gallery() {
         />
         <Photo
           src={dublin}
-          meta="2017-07-04"
+          meta="2024-06-17"
           alt="my e-bike"
           width={230}
           height={250}
@@ -163,7 +163,7 @@ export default function Gallery() {
         />
         <Photo
           src={texas}
-          meta="2021-05-20"
+          meta=""
           alt="Texas"
           width={280}
           height={235}
@@ -173,7 +173,7 @@ export default function Gallery() {
         />
         <Photo
           src={rome}
-          meta="2022-09-10"
+          meta=""
           alt={"Snowboarding in Colorado"}
           width={220}
           height={260}

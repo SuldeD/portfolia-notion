@@ -121,9 +121,9 @@ export default function Gear() {
 
 const gear = [
   {
-    name: "GoPro HERO10 Black action camera",
+    name: "DJI Osmo Pocket 3",
     category: "Camera Gear",
-    image: "https://m.media-amazon.com/images/I/61p2fYdYP+L._AC_SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/31HSfH1VceL._AC_US100_.jpg",
     description: "Awesome for action video, I use it for my POV shots.",
     link: "https://amzn.to/3exkZuq",
   },
