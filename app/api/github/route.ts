@@ -10,8 +10,11 @@ export async function GET(req: NextRequest) {
 
   try {
     const url = `https://api.github.com/users/${username}/repos?per_page=100`;
+
     const response = await fetch(url);
     const data = await response.json();
+
+    // console.log("github data ->", data);
     const stars = data.reduce(
       (acc: number, curr: { stargazers_count: number }) =>
         acc + curr.stargazers_count,

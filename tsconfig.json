@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": ".",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -20,7 +21,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      ".contentlayer/generated": ["./.contentlayer/generated"]
+      "contentlayer/generated": [".contentlayer/generated"]
     }
   },
   "include": [
@@ -28,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "lib/fetcher.js",
+    "lib/fetcher.ts",
     ".contentlayer/generated"
   ],
   "exclude": ["node_modules"]

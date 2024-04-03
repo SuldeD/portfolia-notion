@@ -3,8 +3,6 @@ import {
   defineDocumentType,
   makeSource
 } from "contentlayer/source-files";
-import rehypePrism from "rehype-prism-plus";
-import rehypeSlug from "rehype-slug";
 var getSlug = (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, "");
 var postComputedFields = {
   slug: {
@@ -59,14 +57,14 @@ var Project = defineDocumentType(() => ({
 }));
 var contentlayer_config_default = makeSource({
   contentDirPath: "content",
-  documentTypes: [Post, Project],
-  mdx: {
-    rehypePlugins: [() => rehypePrism, rehypeSlug]
-  }
+  documentTypes: [Post, Project]
+  // mdx: {
+  //   rehypePlugins: [() => rehypePrism, rehypeSlug],
+  // },
 });
 export {
   Post,
   Project,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-UDQTMKSG.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-ZFD3YCT3.mjs.map

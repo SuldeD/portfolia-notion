@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata, ResolvingMetadata } from "next";
-import { allPosts, Post as PostType } from ".contentlayer/generated";
+import { allPosts, Post as PostType } from "@/.contentlayer/generated";
 
 import Tags from "@/components/Tags";
 import Link from "@/components/ui/Link";

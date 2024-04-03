@@ -18,6 +18,7 @@ const links = [
   { label: "Blog", href: "/blog" },
   { label: "Gear", href: "/gear" },
   { label: "Projects", href: "/projects" },
+  { label: "Lifestyle", href: "/lifestyle" },
 ];
 
 const KubrickleStencil = localFont({

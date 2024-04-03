@@ -1,5 +1,5 @@
 "use client";
-import { Post as PostType } from ".contentlayer/generated";
+import { Post as PostType } from "@/.contentlayer/generated";
 
 import FlipNumber from "@/components/FlipNumber";
 

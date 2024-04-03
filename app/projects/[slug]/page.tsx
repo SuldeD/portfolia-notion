@@ -1,4 +1,4 @@
-import { allProjects, Post as PostType } from ".contentlayer/generated";
+import { allProjects, Post as PostType } from "@/.contentlayer/generated";
 import { notFound } from "next/navigation";
 
 import Mdx from "@/app/blog/components/ui/MdxWrapper";

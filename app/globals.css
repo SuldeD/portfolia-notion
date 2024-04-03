@@ -216,3 +216,34 @@ pre[class*="language-"] {
   color: var(--gray-8); /* Line number color */
   content: attr(line);
 }
+
+.fade {
+  opacity: 0;
+
+  @media (prefers-reduced-motion) {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+
+  @media (prefers-reduced-motion) {
+    transform: translateY(0px);
+    opacity: 1;
+    animation: none;
+  }
+}
+
+.scaleFade {
+  opacity: 0;
+  transform: scale(0.75);
+
+  @media (prefers-reduced-motion) {
+    transform: scale(1);
+    opacity: 1;
+    animation: none;
+  }
+}

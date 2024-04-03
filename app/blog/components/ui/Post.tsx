@@ -1,5 +1,5 @@
 import { formatDate } from "@/lib/formatdate";
-import type { Post } from ".contentlayer/generated";
+import type { Post } from "@/.contentlayer/generated";
 import Section from "@/components/Section";
 import Link from "@/components/ui/Link";
 import Image from "next/image";

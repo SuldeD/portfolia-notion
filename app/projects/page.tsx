@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
-import { allProjects, Project } from ".contentlayer/generated";
+import { allProjects, Project } from "@/.contentlayer/generated";
 import Halo from "@/components/ui/Halo";
 
 export const metadata: Metadata = {

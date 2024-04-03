@@ -66,7 +66,7 @@ export const Project = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "content",
   documentTypes: [Post, Project],
-  mdx: {
-    rehypePlugins: [() => rehypePrism, rehypeSlug],
-  },
+  // mdx: {
+  //   rehypePlugins: [() => rehypePrism, rehypeSlug],
+  // },
 });
