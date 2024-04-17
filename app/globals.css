@@ -247,3 +247,16 @@ pre[class*="language-"] {
     animation: none;
   }
 }
+
+.map-marker {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--blue-10);
+  transform: translate(-50%, -50%);
+  border: 3px solid rgba(255, 255, 255, 0.95);
+}
+.mapboxgl-control-container {
+  display: none;
+}
