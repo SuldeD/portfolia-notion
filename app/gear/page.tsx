@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Gear | Munkh Suld",
@@ -137,12 +138,12 @@ const gear = [
   },
 
   {
-    name: "MacBook Pro M1 Air 13-inch",
+    name: "MacBook Pro M3 Pro 14-inch",
     category: "Apple",
     image:
-      "https://m.media-amazon.com/images/I/51KhexN7YkL._AC_UY436_FMwebp_QL65_.jpg",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-m3-max-pro-spaceblack-select-202310?wid=892&hei=820&fmt=jpeg&qlt=90&.v=1697230830118",
     description: "Daily driver. Sleek, great display, and performant.",
-    link: "https://amzn.to/41fkhEH",
+    link: "https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-m3-pro",
   },
   {
     name: "Apple AirPods Max",
@@ -161,11 +162,10 @@ const gear = [
     link: "https://amzn.to/3UmMQhq",
   },
   {
-    name: "Apple MagSafe Charger",
+    name: "Apple IPhone 11 Pro",
     category: "Apple",
-    image:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHXH3_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1666381499607",
+    image: "https://m.media-amazon.com/images/I/61UC1mk6dfL._AC_SX679_.jpg",
     description: "The MagSafe Charger delivers fast wireless charging.",
-    link: "https://amzn.to/3UouXP4",
+    link: "https://www.amazon.com/Apple-iPhone-64GB-Space-Gray/dp/B07ZPKZSSC?th=14",
   },
 ];

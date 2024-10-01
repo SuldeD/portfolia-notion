@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 export default function X() {
   return (
     <Link
-      href="https://github.com/Leo416732"
+      href="https://github.com/SuldeD"
       className="col-span-1 row-span-1 no-underline"
     >
       <Card className="flex aspect-square flex-col gap-1.5">

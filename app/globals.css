@@ -257,6 +257,11 @@ pre[class*="language-"] {
   transform: translate(-50%, -50%);
   border: 3px solid rgba(255, 255, 255, 0.95);
 }
+
 .mapboxgl-control-container {
   display: none;
+}
+
+.mask-gradient {
+  mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 1) 90%);
 }

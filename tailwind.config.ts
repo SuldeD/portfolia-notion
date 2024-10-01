@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      silver: "#DFDFDE",
+      "silver-dark": "#9B9B9B",
+      "neutral-950": "#010101",
+      "neutral-850": "#1C1C1C",
       textColor: {
         primary: "var(--gray-12)",
         secondary: "var(--gray-11)",

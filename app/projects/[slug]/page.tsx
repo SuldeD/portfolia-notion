@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import Mdx from "@/app/blog/components/ui/MdxWrapper";
 import Link from "@/components/ui/Link";
+import React from "react";
 
 export default function Project({ params }: { params: any }) {
   const post = allProjects.find((post) => post.slug === params.slug);
@@ -69,7 +70,7 @@ export default function Project({ params }: { params: any }) {
               href="mailto:contact@sulde.dev@gmail.com"
               className="text-primary underline"
             >
-              sulde@gmail
+              sulde.dev@gmail
             </a>
             . I&apos;d be happy to connect!{" "}
           </p>

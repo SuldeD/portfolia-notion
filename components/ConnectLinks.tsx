@@ -44,12 +44,12 @@ const ConnectLinks: ConnectLink[] = [
   // },
   {
     label: "GitHub",
-    href: "https://github.com/Leo416732",
+    href: "https://github.com/SuldeD",
     icon: <FaGithub />,
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/leo_ol4/",
+    href: "https://www.instagram.com/munkhlds_",
     icon: <FaInstagram />,
   },
   // {

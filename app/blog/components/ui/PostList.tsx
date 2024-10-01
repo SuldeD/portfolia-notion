@@ -1,6 +1,6 @@
 "use client";
 
-import type { Post as PostType } from "@/.contentlayer/generated";
+import type { Post as PostType } from ".contentlayer/generated";
 import Post from "./Post";
 import React, { useRef, useState } from "react";
 

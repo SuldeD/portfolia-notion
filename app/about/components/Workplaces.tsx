@@ -1,9 +1,9 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import { useTheme } from "next-themes";
 import clsx from "clsx";
 
 import Link from "@/components/ui/Link";
+import React from "react";
 
 type Workplace = {
   title: string;
@@ -14,8 +14,6 @@ type Workplace = {
 };
 
 function Workplace({ title, company, imageSrc, time, link }: Workplace) {
-  const { theme } = useTheme();
-
   const content = (
     <>
       <div className="flex items-center gap-4">
@@ -26,7 +24,7 @@ function Workplace({ title, company, imageSrc, time, link }: Workplace) {
           height={48}
           className={clsx(
             "rounded-full",
-            company === "University of Houston" && "bg-neutral-50"
+            company === "Ghorde" && "bg-white p-1"
           )}
         />
         <div className="flex flex-col gap-px">

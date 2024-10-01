@@ -10,8 +10,10 @@ import texas from "public/gallery/texas.jpg";
 import battman from "public/gallery/battman.jpeg";
 import dublin from "public/gallery/dublin.jpeg";
 import rome from "public/gallery/rome.jpeg";
+import Sulde from "public/gallery/Sulde.png";
 
 import Halo from "@/components/ui/Halo";
+import React from "react";
 
 const ticketingFont = localFont({
   src: "../../../public/ticketing.woff2",
@@ -141,7 +143,7 @@ export default function Gallery() {
     <>
       <section className="flex gap-4 h-[268px] relative">
         <Photo
-          src={battman}
+          src={Sulde}
           meta=""
           alt="Battman"
           width={324}
@@ -151,7 +153,7 @@ export default function Gallery() {
           index={1}
         />
         <Photo
-          src={dublin}
+          src={battman}
           meta="2024-06-17"
           alt="my e-bike"
           width={230}

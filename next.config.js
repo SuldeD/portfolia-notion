@@ -18,6 +18,7 @@ const nextConfig = {
       "store.storeimages.cdn-apple.com",
       "www.apple.com",
       "i.ytimg.com",
+      "www.amazon.com",
     ],
   },
 };

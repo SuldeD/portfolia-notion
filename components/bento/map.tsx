@@ -12,8 +12,8 @@ export default function Map() {
   const mapContainer = useRef(null);
   const map: any = useRef(null);
 
-  const [lng, setLng] = useState(-6.2602964);
-  const [lat, setLat] = useState(53.3498006);
+  const [lng, setLng] = useState(106.918556);
+  const [lat, setLat] = useState(47.92123);
   const [zoom, setZoom] = useState(3.5);
   const [pitch, setPitch] = useState(15);
 

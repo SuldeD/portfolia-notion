@@ -1,10 +1,10 @@
-import { formatDate } from "@/lib/formatdate";
-import type { Post } from "@/.contentlayer/generated";
-import Section from "@/components/Section";
-import Link from "@/components/ui/Link";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "@/components/ui/Link";
+import type { Post } from ".contentlayer/generated";
+import Section from "@/components/Section";
+import { formatDate } from "@/lib/formatdate";
 
 type PostProps = {
   post: Post;
@@ -16,17 +16,12 @@ type PostProps = {
 
 export default function Post({ post, mousePosition }: PostProps) {
   const { publishedAt, slug, title, image } = post;
-  const publishDate = new Date(publishedAt);
-  const showNewBadge =
-    Math.abs(new Date(publishDate).getTime() - new Date().getTime()) /
-      (24 * 60 * 60 * 1000) <
-    30;
   const imageHeight = 150;
   const imageWidth = 300;
   const imageOffset = 24;
 
   return (
-    <li className="py-3 group transition-opacity">
+    <li className="group py-3 first:pt-0 last:pb-0 transition-opacity">
       <div className="transition-opacity">
         {image && mousePosition && (
           <motion.div
@@ -37,7 +32,7 @@ export default function Post({ post, mousePosition }: PostProps) {
             initial={false}
             transition={{ ease: "easeOut" }}
             style={{ width: imageWidth, height: imageHeight }}
-            className="absolute z-10 hidden overflow-hidden rounded shadow-sm pointer-events-none sm:group-hover:block bg-primary"
+            className="pointer-events-none absolute z-10 hidden overflow-hidden rounded bg-tertiary shadow-sm sm:group-hover:block"
           >
             <Image
               src={image}
@@ -47,19 +42,36 @@ export default function Post({ post, mousePosition }: PostProps) {
             />
           </motion.div>
         )}
-        <div className="flex justify-between gap-6 items-center">
+        <div className="flex items-center justify-between gap-6">
           <Section heading={formatDate(publishedAt)}>
             <Link href={`/blog/${slug}`} className="font-medium leading-tight">
               {title}
             </Link>
           </Section>
-          <div className="md:hidden aspect-square min-w-24 w-24 h-24 relative drop-shadow-sm">
-            <Image
-              src={image}
-              alt={title}
-              fill
-              className="object-cover rounded"
-            />
+          <div className="min-w-24 relative flex aspect-square h-24 w-24 items-center justify-center rounded-md border border-secondary bg-secondary shadow-sm md:hidden">
+            {image ? (
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="rounded-md object-cover"
+              />
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="h-6 w-6 text-secondary"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            )}
           </div>
         </div>
       </div>

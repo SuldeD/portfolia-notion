@@ -8,6 +8,7 @@ import Workplaces from "./components/Workplaces";
 import Gallery from "./components/Gallery";
 
 import infiniteLogo from "public/work/infinite.png";
+import ghordeLogo from "public/work/ghorde.png";
 
 import battman from "public/gallery/battman.jpeg";
 import dublin from "public/gallery/dublin.jpeg";
@@ -70,7 +71,7 @@ export default function About() {
       >
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
-            <p>Hello world, I&apos;m Munkh Suld!</p>
+            <p>Hello world, I&apos;m Munkhsuld!</p>
 
             <p>
               I have a passion for design and am always looking for ways to
@@ -159,12 +160,20 @@ export default function About() {
 
 const workplaces = [
   {
+    title: "Full Stack Engineer",
+    company: "Ghorde",
+    time: "2024 -",
+    imageSrc: ghordeLogo,
+    link: "https://ghorde.mn",
+  },
+  {
     title: "Sowtware Engineer",
     company: "Infinite",
-    time: "2023 -",
+    time: "2023 - 2024",
     imageSrc: infiniteLogo,
     link: "https://infinite.mn",
   },
+
   // {
   //   title: "Software Engineer",
   //   company: "PeriShip",

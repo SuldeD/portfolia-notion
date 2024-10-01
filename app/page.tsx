@@ -83,7 +83,7 @@ export default async function Home() {
         <Card className="relative col-span-2 row-span-1" disableHalo noPadding>
           <Map />
           <div className="absolute bottom-4 left-4 flex items-center rounded-lg bg-neutral-100/75 px-4 py-1.5 backdrop-blur dark:bg-neutral-900/75 md:bottom-6 md:left-6">
-            <p className="text-sm font-medium text-primary">Dublin, IRE</p>
+            <p className="text-sm font-medium text-primary">UB, MON</p>
           </div>
         </Card>
       </div>

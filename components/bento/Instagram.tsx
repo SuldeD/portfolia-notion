@@ -8,10 +8,10 @@ export default function Instagram() {
       <div className="flex aspect-square h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-bl from-[#7638FA] via-[#FF006A] to-[#FED702]">
         <FaInstagram className="text-2xl text-white" />
       </div>
-      <p className="text-secondary">@leo_ol4</p>
+      <p className="text-secondary">@munkhlds_</p>
       <Link
         className="mt-auto flex w-fit items-center gap-1.5 rounded-full bg-secondary px-4 py-1.5 text-sm no-underline hover:bg-tertiary"
-        href="https://instagram.com/leo_ol4"
+        href="https://instagram.com/munkhlds_"
       >
         <span className="font-medium text-primary">Follow</span>
         {/* <span className="text-tertiary">3.9k</span> */}
