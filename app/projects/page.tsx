@@ -49,8 +49,8 @@ export default function Blog() {
                     src={project.image}
                     alt={project.title}
                     layout="fill"
-                    objectFit="contain"
-                    className="w-full h-full p-1"
+                    objectFit="cover"
+                    className="w-full h-full"
                   />
                 </Halo>
               </Link>

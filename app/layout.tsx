@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Home | Munkh Suld",
   description:
     "I am a full-stack software engineer who basically just enjoys creating things.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
