@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 export default function Blog() {
   const projects = allProjects;
 
+  
+
   return (
     <div className="max-w-[700px] mx-auto">
       <div className="flex flex-col gap-16 md:gap-24 ">
